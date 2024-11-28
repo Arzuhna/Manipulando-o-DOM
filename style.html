@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Manipulando o DOM</title>
+</head>
+<body>
+    <h1>Clique no botão para alterar o texto a baixo</h1>
+    <p id="meuParagrafo"> Olá.</p>
+    <button id="meuBotao">Clique aqui</button>
+
+    <script>
+        // Seleciona o botão e o parágrafo pelo ID
+        const botao = document.getElementById("meuBotao");
+        const paragrafo = document.getElementById("meuParagrafo");
+
+        // Adiciona um evento de clique ao botão
+        botao.addEventListener("click", function() {
+            // Altera o texto do parágrafo
+            paragrafo.textContent = "Como você esta?";
+        });
+    </script>
+</body>
+</html>
